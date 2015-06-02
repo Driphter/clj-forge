@@ -22,8 +22,7 @@
              harvest-tool
              harvest-level
              unbreakable
-             light-level]
-      :or {unbreakable  false}}]
+             light-level]}]
   (when material
     (let [block (proxy [Block] [material])]
       (when name
