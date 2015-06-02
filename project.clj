@@ -7,5 +7,5 @@
             :plugins [[lein-cljfmt "0.1.10"]
                       [lein-kibit "0.1.2"]]
             :aot :all
-            :source-path "src/main/clojure"
+            :source-paths ["src/main/clojure"]
             :repositories [["forge" "http://files.minecraftforge.net/maven"]])
