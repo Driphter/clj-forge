@@ -1,7 +1,7 @@
 (ns clj-forge.mod)
 
 (defmacro defmod
-  [class-name & {:keys [^String mod-id ^String mod-name ^String version pre-init init post-init]}]
+  [class-name & {:keys [mod-id mod-name version pre-init init post-init]}]
   (let [prefix-sym   (gensym 'prefix)
         preinit-sym  (gensym 'preinit)
         init-sym     (gensym 'init)
