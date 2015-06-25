@@ -5,10 +5,10 @@
 
 (defn register-block
   [& blocks]
-    (doseq [^Block block blocks]
-      (GameRegistry/registerBlock block (-> block
-                                            .getUnlocalizedName
-                                            (subs 5)))))
+  (doseq [^Block block blocks]
+    (GameRegistry/registerBlock block (-> block
+                                          .getUnlocalizedName
+                                          (subs 5)))))
 
 (defn create-block
   [& {:keys [name

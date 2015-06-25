@@ -25,4 +25,3 @@
   (GameRegistry/addSmelting (item-stack ingredients)
                             (item-stack result)
                             (float exp)))
-

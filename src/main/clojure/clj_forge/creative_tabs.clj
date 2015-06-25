@@ -11,6 +11,7 @@
   (when name
     (proxy [CreativeTabs] [(CreativeTabs/getNextID) name]
       ^{SideOnly [Side/CLIENT]}
-      (getTabIconItem []
-        (GameRegistry/findItem (str mod-id)
-                               (str icon-item-name))))))
+      (getTabIconItem
+       []
+       (GameRegistry/findItem (str mod-id)
+                              (str icon-item-name))))))

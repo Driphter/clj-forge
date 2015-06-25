@@ -31,10 +31,9 @@
 (defn register-item
   [& items]
   (doseq [^Item item items]
-    (GameRegistry/registerItem
-      item (-> item
-               .getUnlocalizedName
-               (subs 5)))))
+    (GameRegistry/registerItem item (-> item
+                                        .getUnlocalizedName
+                                        (subs 5)))))
 
 (defn create-item
   [& {:keys [name

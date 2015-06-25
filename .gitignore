@@ -2,6 +2,7 @@
 /*.ipr
 /*.iml
 /*.iws
+/.idea
 
 #eclipse
 /eclipse
@@ -10,6 +11,7 @@
 /target/
 .nrepl-port
 .lein-repl-history
+.lein-failures
 
 #windows
 /desktop.ini
